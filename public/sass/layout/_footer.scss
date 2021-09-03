@@ -1,0 +1,40 @@
+footer {
+    margin-top: 8rem;
+    position: relative;
+}
+.main-content {
+    background-color: $color-primary;
+    height: 40rem;
+}
+.row {
+}
+.col {
+}
+.footer-item {
+}
+.copy-right {
+    text-align: center;
+    padding: 2rem;
+    background-color: $color-secondary;
+    color: whitesmoke;
+}
+.list-dog {
+    display: flex;
+     justify-content: center; 
+    position: relative;
+    top: -15rem;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    img{
+        scroll-snap-align: center;
+    }
+    @include media-breakpoint-down(lg){
+        justify-content: unset;
+    }
+}

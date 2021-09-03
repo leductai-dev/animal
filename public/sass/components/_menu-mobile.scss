@@ -1,0 +1,67 @@
+.menu-mobile {
+    position: fixed;
+    right: 0rem;
+    top: 0rem;
+    height: 100%;
+    width: 30rem;
+    transform: translateX(100%);
+    transition: all 0.3s;
+    z-index: 3;
+    .user-logout {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        span :last-child {
+            margin-left: 0.5rem;
+        }
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    .menu-content {
+        height: 100%;
+        background-color: #f5f5f5;
+        top: 0rem;
+        box-shadow: 0 0 13px 4px #0000004a;
+    }
+    .menu-heading {
+        color: whitesmoke;
+        font-size: 2rem;
+        height: $header-height;
+        line-height: $header-height;
+        text-align: center;
+        font-weight: 400;
+        font-family: "Coiny", cursive;
+        background-color: $color-secondary;
+        position: relative;
+        .close-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1rem;
+            font-size: 3.2rem;
+            font-weight: 500;
+        }
+    }
+    .menu-list {
+    }
+    .menu-item {
+        padding: 0 1rem;
+    }
+    .menu-link{
+        display: block;
+        padding: 1.3rem 1rem;
+        color: $color-primary;
+        font-family: $primary-font;
+        border-bottom: 1px solid $color-primary;
+        font-size: 2rem;
+        & i{
+            min-width: 2rem;
+        }
+     
+    }
+}

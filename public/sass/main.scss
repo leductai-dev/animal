@@ -1,0 +1,20 @@
+
+@import "./variables";
+@import "./base";
+@import "./helper";
+
+@import './components/animal-item';
+@import './components/pagination';
+@import './components/typography';
+@import './components/bread-crumb';
+@import './components/menu-mobile';
+
+@import './layout/header';
+@import './layout/footer';
+@import "./layout/grid";
+
+@import "./pages/home";
+@import "./pages/detail";
+@import "./pages/category";
+@import "./pages/login";
+

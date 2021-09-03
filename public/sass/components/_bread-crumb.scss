@@ -1,0 +1,33 @@
+.bread-crumb{
+    display: flex;
+    padding: 1rem .5rem 1rem 2rem;
+    background-color: #0e2a4724;
+    border-radius: .3rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    & > *{
+        margin-right: 2rem;
+        color: $color-primary;
+        font-weight: 400;
+    }
+    & > * {
+        position: relative;
+
+    }
+    & > *:not(:first-child):before{
+        content:"";
+        width: 2px;
+        height: 110%;
+        background-color: #10101740;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: -1rem;
+        transform: translateY(-50%);
+    }
+    & > a:hover{
+        color: green;
+        font-weight: 500;
+    }
+}

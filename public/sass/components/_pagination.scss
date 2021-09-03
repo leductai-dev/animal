@@ -1,0 +1,32 @@
+.pagination{
+    margin: 3rem auto;
+    &-list{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+
+    }
+    &-btn{
+        border-radius: 0.5rem;
+        overflow: hidden;
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        box-shadow: 0px 3px 0px 0px black;
+        cursor: pointer;
+        margin-right: 1rem;
+        color: white;
+        background-color: #0b2239;
+        border: none;
+        outline: none;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 17px;
+        &:hover{
+           transform: scale(1.2);
+           box-shadow: unset;
+        transition: all 0.2s;
+        }
+    }
+}

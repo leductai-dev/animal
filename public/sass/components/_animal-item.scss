@@ -1,0 +1,90 @@
+.animal {
+    &-link {
+        display: block;
+        
+        &:hover > .animal-info{
+                transform: translateY(100%);
+                visibility: hidden;
+        }
+    }
+    &-item {
+        border-radius: 1rem;
+        position: relative;
+        line-height: 0rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        overflow: hidden;
+      
+        &:hover .hover-effect {
+            transform: unset;
+            visibility: visible;
+        }
+        // &::before{
+        //     position: absolute;
+        //     z-index: -1;
+        //     top: 0;
+        //     left: 0rem;
+        //     right: 0rem;
+        //     bottom: 0rem;
+        //     content: "";
+        //     background-color: red;
+        //     filter: blur(5px);
+        // }
+       
+    }
+   
+    &-img {
+        width: 100%;
+        height: auto;
+    }
+    &-info {
+        transition: all 0.3s;
+        position: absolute;
+        bottom: 0rem;
+        padding: 1rem 1rem;
+        background-color: #0000006e;
+        color: #d8d8d8;
+        z-index: 1;
+        line-height: 1;
+        pointer-events: none;
+        width: 100%;
+        font-family: $primary-font;
+
+    }
+    &-name {
+        
+    }
+    &-description {
+        @include media-breakpoint-down(sm){
+            display: none;
+            
+        }
+    }
+}
+.hover-effect {
+    transition: all 0.3s;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    text-align: center;
+    background-color: #0000006e;
+    z-index: 3;
+    border-radius: 1rem;
+    transform: translateY(calc(-100% - 1.5rem));
+    visibility: hidden;
+    & span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-primary;
+        font-size: 4rem;
+        color: #b9b8b8;
+        &:hover{
+            color: whitesmoke;
+        }
+    }
+
+}

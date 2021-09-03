@@ -1,0 +1,64 @@
+.animal-detail{
+    margin-top: 3rem;
+
+}
+.detail{
+    display: flex;
+    @include media-breakpoint-down(sm){
+        display: block;
+    }
+    &-img{
+        line-height: 0rem;
+        width: 40%;
+        background-color:rgb(221 225 229);
+        @include media-breakpoint-down(sm){
+            width: 100%;
+        }
+        & img{
+            width: 100%;
+            height: 40rem;
+            object-fit: contain;
+        }
+     
+    }
+    &-info{
+        width: 60%;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        @include media-breakpoint-down(sm){
+            width: 100%;
+            padding-left: 1rem;
+        }
+    }
+    &-name{
+        font-family: 'Coiny', cursive;
+        font-size: 4rem;
+        color: $color-primary;
+        margin-bottom: 1.5rem;
+    }
+    .short-des{
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        & span:first-child{
+            color: $color-primary;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.description{
+
+    &-title{
+        font-family: 'Coiny', cursive;
+        font-size: 2.5rem;
+        color: $color-primary;
+        margin-bottom: 1.5rem;
+        margin-top: 2.5rem;
+    }
+    & p{
+        text-indent: 4rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+}

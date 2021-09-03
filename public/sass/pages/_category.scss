@@ -1,0 +1,47 @@
+.fillter-bar {
+    padding: 1rem 2rem;
+    background-color: #2e3335a1;
+    border-radius: 10px;
+    display: flex;
+    color: whitesmoke;
+    font-family: $primary-font;
+    margin-bottom: 2rem;
+    align-items: center;
+    
+    $item-height: 2.5rem;
+    .fillter-group {
+        margin-right: 2rem;
+
+        .fillter-name {
+        }
+        .option {
+            height: $item-height;
+            border-radius: 50px;
+            min-width: 10rem;
+            outline:none;
+            padding-left: 10px;
+        }
+        &:last-child{
+            margin-left: auto;
+            margin-right: 0rem;
+
+        }
+        .nav-page{
+            text-align: center;
+            height: $item-height;
+            width: $item-height;
+            line-height: $item-height;
+            color: $color-primary;
+            font-size: 1.5rem;
+            border:none;
+            outline:none;
+            cursor:pointer;
+            border-radius: 3px;
+            transition: all 0.1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+}
